@@ -11,8 +11,9 @@ EXPCONF = {
     'debug':False,
 
     #'use_pretrained': False,
-    'smaller': True,
-	'input_size': 1,
+	'vocab_size': 30010,
+    'embedding_dim': 5,
+	'input_size': 5,
 	'hidden_size': 128,
 	'num_layers': 1,
 	# 'num_hidden_layers': 8,
@@ -27,7 +28,7 @@ EXPCONF = {
 
     # training conditions
     'numep': 10, # later optimize
-    'bsz': 512,
+	'bsz': 32,
     'scheduler': 'cosine', # linear
     'warmups': 100,
     'lr': 1e-4,
