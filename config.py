@@ -10,6 +10,11 @@ EXPCONF = {
     #debug option
     'debug':False,
 
+	'tsz': 30000,
+	'dsz': 40000,
+	'train_mode': True,
+	'eval_mode' : False,
+
     #'use_pretrained': False,
 	'vocab_size': 30010,
     'embedding_dim': 5,

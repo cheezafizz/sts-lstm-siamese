@@ -9,12 +9,15 @@ from munch import Munch
 from collections import defaultdict
 
 from config import *
-
+from utils import *
 
 class STSDataset(Dataset):
 
-	def __init__(self):
+	def __init__(self, mode):
 		self.dataframe = pd.read_csv("../data/train.csv")
+		tsz = NearestMultiple(EXPCONF.tsz, EXPCONF.bsz)
+		dsz = NearestMultiple(EXPCONF.dsz, EXPCONF.bsz)
+		self.dataframe = self.dataframe.iloc[:tsz, :] if mode else self.dataframe.iloc[tsz:dsz, :] 
 	
 	def __len__(self):
 		return len(self.dataframe)
@@ -46,9 +49,9 @@ class STSDataset(Dataset):
 
 
 		
-def get_loader(expconf):
+def get_loader(expconf, mode):
 	print("preparing dataloader")
-	ds = STSDataset()
+	ds = STSDataset(mode)
 	loader = DataLoader(dataset = ds, batch_size = expconf.bsz, shuffle = True, num_workers= expconf.numworkers, collate_fn = ds.collate)
 	return list(loader), ds
 
