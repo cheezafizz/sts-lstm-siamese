@@ -1,0 +1,21 @@
+preparing dataloader
+preparing dataloader
+epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
+iterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s][Aiterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s]
+epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_disc.py", line 137, in <module>
+    main()
+  File "train_disc.py", line 103, in main
+    print(loss)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/tensor.py", line 179, in __repr__
+    return torch._tensor_str._str(self)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/_tensor_str.py", line 372, in _str
+    return _str_intern(self)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/_tensor_str.py", line 352, in _str_intern
+    tensor_str = _tensor_str(self, indent)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/_tensor_str.py", line 241, in _tensor_str
+    formatter = _Formatter(get_summarized_data(self) if summarize else self)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/_tensor_str.py", line 89, in __init__
+    nonzero_finite_vals = torch.masked_select(tensor_view, torch.isfinite(tensor_view) & tensor_view.ne(0))
+RuntimeError: CUDA error: device-side assert triggered

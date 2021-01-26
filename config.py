@@ -12,8 +12,9 @@ EXPCONF = {
 
 	'tsz': 30000,
 	'dsz': 40000,
-	'train_mode': True,
-	'eval_mode' : False,
+	'train_mode': 1,
+	'eval_mode' : 0,
+	'dev_mode' : 2,
 
     #'use_pretrained': False,
 	'vocab_size': 30010,

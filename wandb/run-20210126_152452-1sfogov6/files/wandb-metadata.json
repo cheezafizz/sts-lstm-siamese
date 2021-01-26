@@ -1,0 +1,24 @@
+{
+    "os": "Linux-4.15.0-130-generic-x86_64-with-glibc2.10",
+    "python": "3.8.5",
+    "heartbeatAt": "2021-01-26T15:24:53.771274",
+    "startedAt": "2021-01-26T15:24:52.882780",
+    "docker": null,
+    "gpu": "TITAN Xp",
+    "gpu_count": 2,
+    "cpu_count": 4,
+    "cuda": "10.2.89",
+    "args": [],
+    "state": "running",
+    "codePath": "train_disc.py",
+    "program": "train_disc.py",
+    "git": {
+        "remote": "https://github.com/cheezafizz/sts-lstm-siamese.git",
+        "commit": "51fdaf50be9010b7682576b4dee31206577ac020"
+    },
+    "email": "dillonzzang@gmail.com",
+    "root": "/workspace/sts-lstm-siamese",
+    "host": "ba975aa531ea",
+    "username": "root",
+    "executable": "/root/miniconda3/envs/hi/bin/python"
+}

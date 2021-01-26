@@ -1,0 +1,63 @@
+2021-01-26 07:37:15,953 INFO    MainThread:1364 [wandb_setup.py:_flush():70] setting env: {}
+2021-01-26 07:37:15,953 INFO    MainThread:1364 [wandb_setup.py:_flush():70] multiprocessing start_methods=fork,spawn,forkserver
+2021-01-26 07:37:15,954 INFO    MainThread:1364 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-01-26 07:37:15,954 INFO    MainThread:1364 [wandb_init.py:_log_setup():303] Logging user logs to /workspace/sts-lstm-siamese/wandb/run-20210126_073715-2kzkjp58/logs/debug.log
+2021-01-26 07:37:15,954 INFO    MainThread:1364 [wandb_init.py:_log_setup():304] Logging internal logs to /workspace/sts-lstm-siamese/wandb/run-20210126_073715-2kzkjp58/logs/debug-internal.log
+2021-01-26 07:37:16,930 INFO    MainThread:1364 [wandb_run.py:_console_start():1237] atexit reg
+2021-01-26 07:37:16,931 INFO    MainThread:1364 [wandb_run.py:_redirect():1104] redirect: SettingsConsole.REDIRECT
+2021-01-26 07:37:16,931 INFO    MainThread:1364 [wandb_run.py:_redirect():1107] Redirecting console.
+2021-01-26 07:37:16,931 INFO    MainThread:1364 [redirect.py:install():204] install start
+2021-01-26 07:37:16,931 INFO    MainThread:1364 [redirect.py:install():219] install stop
+2021-01-26 07:37:16,931 INFO    MainThread:1364 [redirect.py:install():204] install start
+2021-01-26 07:37:16,932 INFO    MainThread:1364 [redirect.py:install():219] install stop
+2021-01-26 07:37:16,932 INFO    MainThread:1364 [wandb_run.py:_redirect():1151] Redirects installed.
+2021-01-26 07:37:22,190 INFO    MainThread:1364 [wandb_watch.py:watch():35] Watching
+2021-01-26 07:37:27,162 INFO    MainThread:1364 [wandb_run.py:_atexit_cleanup():1207] got exitcode: 1
+2021-01-26 07:37:27,162 INFO    MainThread:1364 [wandb_run.py:_restore():1179] restore
+2021-01-26 07:37:27,162 INFO    MainThread:1364 [redirect.py:uninstall():223] uninstall start
+2021-01-26 07:37:27,162 INFO    MainThread:1364 [redirect.py:_stop():278] _stop: stdout
+2021-01-26 07:37:27,162 INFO    stdout    :1364 [redirect.py:_pipe_relay():120] relay done saw last write: stdout
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():284] _stop closed: stdout
+2021-01-26 07:37:27,163 INFO    stdout    :1364 [redirect.py:_pipe_relay():136] relay done done: stdout
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():290] _stop joined: stdout
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():292] _stop rd closed: stdout
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:uninstall():227] uninstall done
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:uninstall():223] uninstall start
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():278] _stop: stderr
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():284] _stop closed: stderr
+2021-01-26 07:37:27,163 INFO    stderr    :1364 [redirect.py:_pipe_relay():120] relay done saw last write: stderr
+2021-01-26 07:37:27,163 INFO    stderr    :1364 [redirect.py:_pipe_relay():136] relay done done: stderr
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():290] _stop joined: stderr
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:_stop():292] _stop rd closed: stderr
+2021-01-26 07:37:27,163 INFO    MainThread:1364 [redirect.py:uninstall():227] uninstall done
+2021-01-26 07:37:27,164 INFO    MainThread:1364 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "c9ce471c62aa4b82b75f7e887aea1dac"
+response {
+  poll_exit_response {
+    file_counts {
+      wandb_count: 1
+    }
+    pusher_stats {
+      uploaded_bytes: 736
+      total_bytes: 736
+    }
+  }
+}
+
+2021-01-26 07:37:29,170 INFO    MainThread:1364 [wandb_run.py:_wait_for_finish():1324] got exit ret: uuid: "b23f5314e5944c639ead648a0bd9f317"
+response {
+  poll_exit_response {
+    done: true
+    exit_result {
+    }
+    file_counts {
+      wandb_count: 5
+    }
+    pusher_stats {
+      uploaded_bytes: 4203
+      total_bytes: 4203
+    }
+  }
+}
+
+2021-01-26 07:37:30,229 INFO    MainThread:1364 [wandb_run.py:_show_files():1536] logging synced files
+2021-01-26 07:37:30,230 INFO    MainThread:1364 [internal.py:handle_exit():138] Internal process exited

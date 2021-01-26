@@ -1,0 +1,19 @@
+preparing dataloader
+preparing dataloader
+epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
+iterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s][Aiterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s]
+epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "train_disc.py", line 136, in <module>
+    main()
+  File "train_disc.py", line 102, in main
+    loss = disc.loss_fn(output3, b.label)
+  File "train_disc.py", line 63, in loss_fn
+    return loss(x1, x2)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 530, in forward
+    return F.binary_cross_entropy(input, target, weight=self.weight, reduction=self.reduction)
+  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/functional.py", line 2525, in binary_cross_entropy
+    return torch._C._nn.binary_cross_entropy(
+RuntimeError: Found dtype Long but expected Float
