@@ -1,21 +1,0 @@
-preparing dataloader
-preparing dataloader
-epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
-iterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s][Aiterations progress DISC:   0%|          | 0/1250 [00:00<?, ?it/s]
-epoch progress DISC:   0%|          | 0/10 [00:00<?, ?it/s]
-Traceback (most recent call last):
-  File "train_disc.py", line 135, in <module>
-    main()
-  File "train_disc.py", line 100, in main
-    output3 = disc(output1, output2)
-  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "train_disc.py", line 56, in forward
-    x3= lin1(x3)
-  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
-    result = self.forward(*input, **kwargs)
-  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 93, in forward
-    return F.linear(input, self.weight, self.bias)
-  File "/root/miniconda3/envs/hi/lib/python3.8/site-packages/torch/nn/functional.py", line 1690, in linear
-    ret = torch.addmm(bias, input, weight.t())
-RuntimeError: Tensor for 'out' is on CPU, Tensor for argument #1 'self' is on CPU, but expected them to be on GPU (while checking arguments for addmm)
