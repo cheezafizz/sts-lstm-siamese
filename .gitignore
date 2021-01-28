@@ -1,3 +1,11 @@
 __pycache__/
 wandb/
 .vimrc
+failures/__pycache__/
+disc/__pycache__/
+siamese-disc/__pycache__/
+failures/wandb/
+disc/__pycache__/
+siamese-disc/__pycache__/
+
+
